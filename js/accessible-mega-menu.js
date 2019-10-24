@@ -244,7 +244,8 @@
           } else if (isTouch) {
             event.preventDefault();
             event.stopPropagation();
-            _togglePanel.call(this, event, target.hasClass(this.settings.openClass));
+            // _togglePanel.call(this, event, target.hasClass(this.settings.openClass));
+            _togglePanel.call(this, event, !target.hasClass(this.settings.openClass));
           }
         }
       }
